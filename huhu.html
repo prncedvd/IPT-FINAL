@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Attendance Form</title>
+
+    <link rel="stylesheet" href="projectcopy2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logotop">
+        <div class="logo">
+            <a href="attnd.html"><img src="fsuulogo.jpg" alt="Logo"></a>
+          </div>
+        </div>
+        <div class="header">
+            <h1>AttendEasy</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="main">
+            <div class="form">
+                <form id="insert-form">
+                    <div class="field">
+                        <div class="data">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter First Name" id="first_name" name="first_name">
+                        </div>
+                        <div class="data">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter Last Name" id="last_name" name="last_name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="data">
+                            <label>Date</label>
+                            <input type="date" id="date" name="date" >
+                        </div>
+                        <div class="data">
+                            <label>Course</label>
+                            <select name="section" id="section">
+                                <!-- course -->
+                                <option hidden value="">Select Course</option>
+                                <option value="AB-C">AB-C</option>
+                                <option value="AB-CA">AB-CA</option>
+                                <option value="AB-ECON">AB-ECON</option>
+                                <option value="AB-ELS">AB-ELS</option>
+                                <option value="AB-ENGLANG">AB-ENGLANG</option>
+                                <option value="AB-FILLANG">AB-FILLANG</option>
+                                <option value="AB-GC">AB-GC</option>
+                                <option value="AB-MC">AB-MC</option>
+                                <option value="AB-PS">AB-PS</option>
+                                <option value="ACAD-ABM-ABP">ACAD-ABM-ABP</option>
+                                <option value="ACAD-ABM-BPP">ACAD-ABM-BPP</option>
+                                <option value="ACAD-HUMSS-ABP">ACAD-HUMSS-ABP</option>
+                                <option value="ACD-HUMSS-BPP">ACD-HUMSS-BPP</option>
+                                <option value="ACD-STEM-ABP">ACD-STEM-ABP</option>
+                                <option value="ACD-STEM-BPP">ACD-STEM-BPP</option>
+                                <option value="AT">AT</option>
+                                <option value="ATC1">ATC1</option>
+                                <option value="AUDIT_ACC">AUDIT_ACC</option>
+                                <option value="BECE">BECE</option>
+                                <option value="BECED">BECED</option>
+                                <option value="BEE">BEE</option>
+                                <option value="BEE-PRES.ED.">BEE-PRES.ED.</option>
+                                <option value="BEED">BEED</option>
+                                <option value="BEEG">BEEG</option>
+                                <option value="BEEPE">BEEPE</option>
+                                <option value="BEESE">BEESE</option>
+                                <option value="BHUMSERV">BHUMSERV</option>
+                                <option value="BLIS">BLIS</option>
+                                <option value="BPE">BPE</option>
+                                <option value="BPED">BPED</option>
+                                <option value="BS PSYCH">BS PSYCH</option>
+                                <option value="BSA">BSA</option>
+                                <option value="BSAAM">BSAAM</option>
+                                <option value="BSAIS">BSAIS</option>
+                                <option value="BSAM">BSAM</option>
+                                <option value="BSAT">BSAT</option>
+                                <option value="BSBA-FM">BSBA-FM</option>
+                                <option value="BSBA-HRDM">BSBA-HRDM</option>
+                                <option value="BSBA-HRMGT">BSBA-HRMGT</option>
+                                <option value="BSBA-MM">BSBA-MM</option>
+                                <option value="BSBA-OM">BSBA-OM</option>
+                                <option value="BSBIO">BSBIO</option>
+                                <option value="BSC-ACM">BSC-ACM</option>
+                                <option value="BSC-BIS">BSC-BIS</option>
+                                <option value="BSC-F">BSC-F</option>
+                                <option value="BSC-LM">BSC-LM</option>
+                                <option value="BSC-MK">BSC-MK</option>
+                                <option value="BSC-MN">BSC-MN</option>
+                                <option value="BSCE">BSCE</option>
+                                <option value="BSCRIM">BSCRIM</option>
+                                <option value="BSCS">BSCS</option>
+                                <option value="BSE">BSE</option>
+                                <option value="BSE-BS">BSE-BS</option>
+                                <option value="BSE-E">BSE-E</option>
+                                <option value="BSE-F">BSE-F</option>
+                                <option value="BSE-M">BSE-M</option>
+                                <option value="BSE-MAPEH">BSE-MAPEH</option>
+                                <option value="BSE-PS">BSE-PS</option>
+                                <option value="BSE-S">BSE-S</option>
+                                <option value="BSE-SS">BSE-SS</option>
+                                <option value="BSED">BSED</option>
+                                <option value="BSEMC-DA">BSEMC-DA</option>
+                                <option value="BSEMC-GD">BSEMC-GD</option>
+                                <option value="BSF">BSF</option>
+                                <option value="BSHM">BSHM</option>
+                                <option value="BSHM REV.">BSHM REV.</option>
+                                <option value="BSHRM">BSHRM</option>
+                                <option value="BSIA">BSIA</option>
+                                <option value="BSIE">BSIE</option>
+                                <option value="BSISM">BSISM</option>
+                                <option value="BSIT">BSIT</option>
+                                <option value="BSIT-CA">BSIT-CA</option>
+                                <option value="BSMA">BSMA</option>
+                                <option value="BSN">BSN</option>
+                                <option value="BSNED">BSNED</option>
+                                <option value="BSOA">BSOA</option>
+                                <option value="BSOA-IOM">BSOA-IOM</option>
+                                <option value="BSOA-LOM">BSOA-LOM</option>
+                                <option value="BSPED">BSPED</option>
+                                <option value="BSSE">BSSE</option>
+                                <option value="BSSE-AB">BSSE-AB</option>
+                                <option value="BSSE-ACB">BSSE-ACB</option>
+                                <option value="BSTM">BSTM</option>
+                                <option value="CES1">CES1</option>
+                                <option value="CHS">CHS</option>
+                                <option value="CS">CS</option>
+                                <option value="DBA">DBA</option>
+                                <option value="DHRST">DHRST</option>
+                                <option value="DIT">DIT</option>
+                                <option value="DM">DM</option>
+                                <option value="DM-OM">DM-OM</option>
+                                <option value="DT">DT</option>
+                                <option value="DT">DT</option>
+                                <option value="DT1">DT1</option>
+                                <option value="ETC">ETC</option>
+                                <option value="GEN.ED-BAP">GEN.ED-BAP</option>
+                                <option value="GEN.ED-TE">GEN.ED-TE</option>
+                                <option value="GS">GS</option>
+                                <option value="HMDP">HMDP</option>
+                                <option value="HS">HS</option>
+                                <option value="ITDP">ITDP</option>
+                                <option value="JD">JD</option>
+                                <option value="LAW">LAW</option>
+                                <option value="MACSEA">MACSEA</option>
+                                <option value="MAEM">MAEM</option>
+                                <option value="MAGC">MAGC</option>
+                                <option value="MAN-MSN">MAN-MSN</option>
+                                <option value="MAN-NSA">MAN-NSA</option>
+                                <option value="MANM">MANM</option>
+                                <option value="MANN">MANN</option>
+                                <option value="MATE">MATE</option>
+                                <option value="MATF">MATF</option>
+                                <option value="MATGS">MATGS</option>
+                                <option value="MATSE">MATSE</option>
+                                <option value="MBA">MBA</option>
+                                <option value="MBA-BM">MBA-BM</option>
+                                <option value="MBA-HR">MBA-HR</option>
+                                <option value="MBA-HRM">MBA-HRM</option>
+                                <option value="MNC1">MNC1</option>
+                                <option value="MPA">MPA</option>
+                                <option value="MSPE">MSPE</option>
+                                <option value="MST">MST</option>
+                                <option value="MSTM">MSTM</option>
+                                <option value="PCO">PCO</option>
+                                <option value="PHD">PHD</option>
+                                <option value="PRG">PRG</option>
+                                <option value="PS">PS</option>
+                                <option value="SMAW">SMAW</option>
+                                <option value="TEDUE">TEDUE</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="data">
+                            <label>Year</label>
+                            <select name="year" id="year">
+                                <option hidden value="">Select Year</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="btn">
+                        <div class="btn-data">
+                            <button type="submit" id="register">Submit</button>
+			   
+                        </div>
+                        
+
+                    </div>
+                </form>
+            </div>
+
+            <section id="attendanceSection" class="attendance">
+                <div class="attendance-list">
+                    <div class="attendance-top">
+                        <div class="attendance-data">
+                            <h1>Attendance List</h1>
+                        </div>
+                        <div class="attendance-data search">
+                            <input type="text" id="id_number" name="id_number">
+                            <button type="submit" id="search">Search</button>
+                            <button onclick="location.reload()">Reload</button>
+			    <button type="submit" id="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr">
+                                <div class="th">ID</div>
+                                <div class="th">Firstname</div>
+                                <div class="th">Lastname</div>
+                                <div class="th">Date</div>
+                                <!-- <div class="th">Status</div> -->
+                                <div class="th">Year</div>
+                                <div class="th">Course</div>
+                            </div>
+                        </div>
+
+                        <div class="tbody" id="tbody">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+
+    <script id="listitems" type="text/x-handlebars-template">
+
+        <div class="row" id="logslist">
+            {{#each data}}
+                <div class="tr">
+                    <div class="td">{{id_number}}</div>
+                    <div class="td">{{first_name}}</div>
+                    <div class="td">{{last_name}}</div>
+                    <div class="td">{{date}}</div>
+                   
+                    <div class="td">{{year}}</div>
+                    <div class="td">{{section}}</div>
+                </div>
+            {{/each}}
+        </div>
+    </script>
+    <script>
+
+        const clearFields = () => {
+            $('input[type="text"]').val('');
+            $('input[type="date"]').val('');
+            $('select').val('');
+        }
+
+        const get = (choice) => {
+           // M.Toast.dismissAll();
+            // serialize form data
+            var formData = $("#id_number").serializeArray();
+            const finalUrl = choice ? 'http://172.17.100.12:8081/toyco/cgi-bin/get.o' : 'http://172.17.100.12:8081/toyco/cgi-bin/del.o';
+
+      
+
+            $.ajax({
+                url: finalUrl,
+                type: 'POST',
+                data: JSON.stringify(formData),
+                contentType: 'application/json',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === "success") {
+                        console.log(response.data)
+
+                        if(choice){
+                            var template = Handlebars.compile($("#listitems").html());
+                            var html = template(response);
+
+                            $("#tbody").html(html);
+                        }else{
+                            document.querySelector('#id_number').value = '';
+                            get(true);
+                        }
+
+                    } else if (response.status === "error") {
+                        console.log(response.message)
+                        console.log(response.message_additional)
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(xhr.responseText);
+                }
+            });
+        }
+        get();
+        $(document).ready(function() {
+            $("#register").click(function(event) {
+                event.preventDefault();
+
+                var formData = $("#insert-form").serializeArray();
+
+                $.ajax({
+                    url: 'http://172.17.100.12:8081/toyco/cgi-bin/post.o',
+                    type: 'POST',
+                    data: JSON.stringify(formData),
+                    contentType: 'application/json',
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status === "success") {
+                            console.log(response.message)
+                            console.log(response.data)
+
+                            clearFields();
+                            get(true);
+
+                        } else if (response.status === "error") {
+                            console.log(response.message)
+                            console.log(response.message_additional)
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+
+            $('#search').click(function(event) {
+                event.preventDefault();
+                get(true);
+            });
+	$('#delete').click(function(event) {
+           event.preventDefault();
+           get(false);
+	
+         });
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
+
