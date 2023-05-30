@@ -99,8 +99,7 @@ int main() {
             json_object_set_new(object, "id_number", json_integer(sqlite3_column_int(stmt, 0)));
             json_object_set_new(object, "first_name", json_string((const char*)sqlite3_column_text(stmt, 1)));
             json_object_set_new(object, "last_name", json_string((const char*)sqlite3_column_text(stmt, 2)));
-            json_object_set_new(object, "date", json_string((const char*)sqlite3_column_text(stmt, 3)));
-            json_object_set_new(object, "status", json_string((const char*)sqlite3_column_text(stmt, 4)));
+            json_object_set_new(object, "date", json_string((const char*)sqlite3_column_text(stmt, 3)))
             json_object_set_new(object, "year", json_integer(sqlite3_column_int(stmt, 5)));
             json_object_set_new(object, "section", json_string((const char*)sqlite3_column_text(stmt, 6)));
 
