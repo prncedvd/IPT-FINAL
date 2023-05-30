@@ -33,7 +33,6 @@ void create_json_array(Report info) {
     json_object_set_new(obj, "first_name", json_string(info.first_name));
     json_object_set_new(obj, "last_name", json_string(info.last_name));
     json_object_set_new(obj, "date", json_string(info.date));
-    json_object_set_new(obj, "status", json_string(info.status));
     json_object_set_new(obj, "year", json_string(info.year));
     json_object_set_new(obj, "section", json_string(info.section));
 
@@ -53,7 +52,6 @@ void create_json_array(Report info) {
 
 void create_json_error_responses(const char *err_msg, const char *err_msg_add) {
     json_t *parent = json_object();
-    json_object_set_new(parent, "status", json_string("error"));
     json_object_set_new(parent, "message", json_string(err_msg));
     json_object_set_new(parent, "message_additional", json_string(err_msg_add));
     printf("Content-Type: application/json\n\n");
